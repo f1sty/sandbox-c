@@ -7,6 +7,7 @@
 #endif
 
 uint64_t counter = 0;
+/* _Atomic uint64_t counter = 0; */
 
 int thread_fn(void *lock) {
   mtx_lock(lock);
